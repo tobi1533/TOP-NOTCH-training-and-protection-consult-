@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,8 +120,59 @@ header {
 .map-container {
   margin-top:20px;
 }
+  /* CONTACT ICONS */
+.contact-icons {
+  text-align:center;
+  padding:40px 20px;
+  background: rgba(2,6,23,0.85);
+}
+
+.contact-icons h2 {
+  margin-bottom:20px;
+}
+
+.icons {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.icons i {
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.icons i:hover {
+  color:#facc15;
+  transform:scale(1.2);
+}
 </style>
+  
 </head>
+  <section class="contact-icons">
+  <h2>Contact Us</h2>
+
+  <div class="icons">
+
+    <!-- Email -->
+    <a href="mailto: topnotch011@yahoo.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/2348062223400" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+2348062223400/ +2349093565599">
+      <i class="fas fa-phone"></i>
+    </a>
+
+  </div>
+  </section>
 
 <body>
 
