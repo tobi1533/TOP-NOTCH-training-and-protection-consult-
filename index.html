@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Notch Security - Home</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Social Media Preview -->
+<meta property="og:title" content="Top Notch Security">
+<meta property="og:description" content="Professional security services, training, and consultancy.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Top Notch Security">
+<meta name="twitter:description" content="Professional security services, training, and consultancy.">
+<meta name="twitter:image" content="logo.png">
+
+<style>
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: url('logoo.png') no-repeat center center fixed;
+  background-size: cover;
+  color:white;
+}
+
+/* HEADER */
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background: rgba(2,6,23,0.9);
+  position:relative;
+}
+
+/* LOGO */
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img {
+  width:40px;
+}
+
+/* MENU ICON */
+.menu-icon {
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* DROPDOWN MENU */
+.nav-menu {
+  position:absolute;
+  top:60px;
+  right:20px;
+  background:#020617;
+  border-radius:10px;
+  display:none;
+  flex-direction:column;
+  padding:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+.nav-menu a {
+  color:white;
+  text-decoration:none;
+  margin:10px 0;
+  font-weight:500;
+}
+
+.nav-menu a:hover {
+  color:#facc15;
+}
+
+/* HERO */
+.hero {
+  height:90vh;
+  background:url('logo.png') center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1 {
+  font-size:40px;
+}
+
+.hero p {
+  margin-top:10px;
+  color:#e2e8f0;
+}
+
+/* BUTTON */
+.btn {
+  padding:12px 25px;
+  background:#facc15;
+  border:none;
+  cursor:pointer;
+  margin-top:15px;
+  border-radius:5px;
+}
+
+/* MAP SECTION */
+.map-section {
+  padding:50px 20px;
+  text-align:center;
+  background: rgba(2,6,23,0.85);
+}
+
+.map-container {
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="logo">
+    <h2>Top Notch</h2>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="courses.html">Courses</a>
+    <a href="hire.html">Hire</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Professional Security Solutions</h1>
+  <p>Training • Consultancy • Guard Services</p>
+  <button class="btn">Get Started</button>
+</section>
+
+<section class="map-section">
+  <h2>Our Location</h2>
+  <p>Visit us or locate our office easily</p>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps?q=Apapa,Lagos&output=embed"
+      width="100%" 
+      height="400" 
+      style="border:0; border-radius:10px;"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
+
+</body>
+</html>
