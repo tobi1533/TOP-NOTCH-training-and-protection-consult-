@@ -82,34 +82,25 @@ header {
   color:#facc15;
 }
 
-/* COURSE GRID */
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-  gap:20px;
-}
-
-.card {
+/* COURSE LINKS FIX */
+.course-link a {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   background:#020617;
-  padding:20px;
+  padding:15px;
   border-radius:10px;
-  text-align:center;
-  text-decoration:none;
   color:white;
+  text-decoration:none;
   transition:0.3s;
 }
 
-.card:hover {
-  transform:scale(1.05);
+.course-link a:hover {
   background:#1e293b;
 }
 
-.card img {
-  width:100%;
-  height:120px;
-  object-fit:cover;
-  border-radius:8px;
-  margin-bottom:10px;
+.arrow {
+  font-size:20px;
 }
 </style>
 </head>
@@ -144,7 +135,7 @@ header {
   <div class="course-link">
     <a href="general-courses.html">
       <span>Explore General Courses</span>
-      <i class="arrow">→</i>
+      <span class="arrow">→</span>
     </a>
   </div>
 </section>
@@ -154,7 +145,7 @@ header {
   <div class="course-link">
     <a href="yearly-courses.html">
       <span>View Yearly Programs</span>
-      <i class="arrow">→</i>
+      <span class="arrow">→</span>
     </a>
   </div>
 </section>
@@ -164,7 +155,7 @@ header {
   <div class="course-link">
     <a href="certification.html">
       <span>Get Certified</span>
-      <i class="arrow">→</i>
+      <span class="arrow">→</span>
     </a>
   </div>
 </section>
@@ -174,9 +165,18 @@ header {
   <div class="course-link">
     <a href="special-training.html">
       <span>Explore Specialized Training</span>
-      <i class="arrow">→</i>
+      <span class="arrow">→</span>
     </a>
   </div>
 </section>
-    <a href="course2.html" class="card">
-      <img
+
+<!-- ✅ JAVASCRIPT FIX -->
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>
