@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - Top Notch Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: url('logoo.png') no-repeat center center fixed;
+  background-size: cover;
+  color:white;
+}
+
+/* HEADER */
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background: rgba(2,6,23,0.9);
+  position:relative;
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img {
+  width:70px;
+}
+
+.menu-icon {
+  font-size:28px;
+  cursor:pointer;
+}
+
+.nav-menu {
+  position:absolute;
+  top:60px;
+  right:20px;
+  background:#020617;
+  border-radius:10px;
+  display:none;
+  flex-direction:column;
+  padding:15px;
+}
+
+.nav-menu a {
+  color:white;
+  text-decoration:none;
+  margin:10px 0;
+}
+
+/* HERO */
+.hero {
+  height:40vh;
+  background:url('LOGOO.png') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero h1 {
+  font-size:40px;
+}
+
+/* SECTION */
+.section {
+  padding:40px 20px;
+  background: rgba(2,6,23,0.85);
+}
+
+.section h2 {
+  margin-bottom:20px;
+  color:#facc15;
+}
+
+/* COURSE GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#020617;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:scale(1.05);
+  background:#1e293b;
+}
+
+.card img {
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png">
+    <h2>Top Notch</h2>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="courses.html">Courses</a>
+    <a href="hire.html">Hire</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Our Courses</h1>
+</section>
+
+<!-- GENERAL COURSES -->
+<section class="section">
+  <h2>General Courses</h2>
+  <div class="course-link">
+    <a href="general-courses.html">
+      <span>Explore General Courses</span>
+      <i class="arrow">→</i>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Yearly Training Programs</h2>
+  <div class="course-link">
+    <a href="yearly-courses.html">
+      <span>View Yearly Programs</span>
+      <i class="arrow">→</i>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Professional Certification</h2>
+  <div class="course-link">
+    <a href="certification.html">
+      <span>Get Certified</span>
+      <i class="arrow">→</i>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Specialized Training</h2>
+  <div class="course-link">
+    <a href="special-training.html">
+      <span>Explore Specialized Training</span>
+      <i class="arrow">→</i>
+    </a>
+  </div>
+</section>
+    <a href="course2.html" class="card">
+      <img
