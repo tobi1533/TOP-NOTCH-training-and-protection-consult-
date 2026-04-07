@@ -36,13 +36,12 @@ header {
   width:70px;
 }
 
-/* ✅ MENU ICON */
+/* MENU */
 .menu-icon {
   font-size:28px;
   cursor:pointer;
 }
 
-/* ✅ NAV MENU */
 .nav-menu {
   position:absolute;
   top:60px;
@@ -72,28 +71,18 @@ h1 {
   margin-bottom:20px;
 }
 
-/* TABLE */
-table {
-  width:100%;
-  border-collapse:collapse;
-  background:#020617;
-  border-radius:10px;
-  overflow:hidden;
+/* ✅ LINE STYLE (replaces table only) */
+.course-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 10px;
+  border-bottom:1px solid #1e293b;
 }
 
-th, td {
-  padding:12px;
-  text-align:center;
-  border:1px solid #1e293b;
-}
-
-th {
-  background:#facc15;
-  color:#020617;
-}
-
-tr:hover {
-  background:#1e293b;
+.course-info {
+  font-size:14px;
+  line-height:1.5;
 }
 
 /* APPLY BUTTON */
@@ -118,10 +107,8 @@ tr:hover {
     <h2>Top Notch</h2>
   </div>
 
-  <!-- ✅ TOGGLE BUTTON -->
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
-  <!-- ✅ NAV MENU -->
   <div class="nav-menu" id="menu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -135,137 +122,124 @@ tr:hover {
 <section class="section">
   <h1>Yearly Training Programs (2026)</h1>
 
-  <table>
-    <tr>
-      <th>Month</th>
-      <th>Course</th>
-      <th>Date</th>
-      <th>Fee</th>
-      <th>Hours</th>
-      <th>Apply</th>
-    </tr>
+  <!-- JAN -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>January</strong> — Specialization As A Niche In Industrial Security  
+      <br>30th - 31st Jan | ₦15,000 | 10hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=January Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>January</td>
-      <td>Specialization As A Niche In Industrial Security</td>
-      <td>30th - 31st Jan</td>
-      <td>₦15,000</td>
-      <td>10hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=January Course Application">Apply</a></td>
-    </tr>
+  <!-- FEB -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>February</strong> — Security Operations In Hostile Environment  
+      <br>26th - 28th Feb | ₦50,000 | 20hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=February Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>February</td>
-      <td>Security Operations In Hostile Environment</td>
-      <td>26th - 28th Feb</td>
-      <td>₦50,000</td>
-      <td>20hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=February Course Application">Apply</a></td>
-    </tr>
+  <!-- MARCH -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>March</strong> — Managing Security Across Different Sectors  
+      <br>27th - 28th Mar | ₦15,000 | 10hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=March Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>March</td>
-      <td>Managing Security Across Different Sectors</td>
-      <td>27th - 28th Mar</td>
-      <td>₦15,000</td>
-      <td>10hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=March Course Application">Apply</a></td>
-    </tr>
+  <!-- APRIL -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>April</strong> — Security Operations, Planning & Admin (SOPAC)  
+      <br>28th - 30th Apr | ₦50,000 | 20hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=April Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>April</td>
-      <td>Security Operations, Planning & Admin (SOPAC)</td>
-      <td>28th - 30th Apr</td>
-      <td>₦50,000</td>
-      <td>20hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=April Course Application">Apply</a></td>
-    </tr>
+  <div class="course-row">
+    <div class="course-info">
+      <strong>April</strong> — Security Leadership Course  
+      <br>13th - 17th Apr | ₦100,000
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=Leadership Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>April</td>
-      <td>Security Leadership Course</td>
-      <td>13th - 17th Apr</td>
-      <td>₦100,000</td>
-      <td>-</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=Leadership Course Application">Apply</a></td>
-    </tr>
+  <!-- MAY -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>May</strong> — Tackling Contemporary Security Challenges  
+      <br>29th - 30th May | ₦15,000 | 10hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=May Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>May</td>
-      <td>Tackling Contemporary Security Challenges</td>
-      <td>29th - 30th May</td>
-      <td>₦15,000</td>
-      <td>10hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=May Course Application">Apply</a></td>
-    </tr>
+  <!-- JUNE -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>June</strong> — Effective Modern Security Operations Management  
+      <br>25th - 27th Jun | ₦50,000 | 20hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=June Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>June</td>
-      <td>Effective Modern Security Operations Management</td>
-      <td>25th - 27th Jun</td>
-      <td>₦50,000</td>
-      <td>20hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=June Course Application">Apply</a></td>
-    </tr>
+  <!-- JULY -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>July</strong> — Security And Safety Culture  
+      <br>30th - 31st Jul | ₦15,000 | 10hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=July Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>July</td>
-      <td>Security And Safety Culture</td>
-      <td>30th - 31st Jul</td>
-      <td>₦15,000</td>
-      <td>10hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=July Course Application">Apply</a></td>
-    </tr>
+  <!-- AUG -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>August</strong> — Security Coordinators Course  
+      <br>28th - 30th Aug | ₦50,000 | 20hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=August Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>August</td>
-      <td>Security Coordinators Course</td>
-      <td>28th - 30th Aug</td>
-      <td>₦50,000</td>
-      <td>20hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=August Course Application">Apply</a></td>
-    </tr>
+  <!-- SEPT -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>September</strong> — Managing Security Across Different Sectors  
+      <br>29th - 30th Sep | ₦15,000 | 10hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=September Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>September</td>
-      <td>Managing Security Across Different Sectors</td>
-      <td>29th - 30th Sep</td>
-      <td>₦15,000</td>
-      <td>10hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=September Course Application">Apply</a></td>
-    </tr>
+  <!-- OCT -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>October</strong> — Strategic Security Leadership Course  
+      <br>29th - 31st Oct | ₦150,000 | 30hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=October Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>October</td>
-      <td>Strategic Security Leadership Course</td>
-      <td>29th - 31st Oct</td>
-      <td>₦150,000</td>
-      <td>30hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=October Course Application">Apply</a></td>
-    </tr>
+  <!-- NOV -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>November</strong> — Tackling Contemporary Security Challenges  
+      <br>27th - 28th Nov | ₦15,000 | 10hrs
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=November Course Application">Apply</a>
+  </div>
 
-    <tr>
-      <td>November</td>
-      <td>Tackling Contemporary Security Challenges</td>
-      <td>27th - 28th Nov</td>
-      <td>₦15,000</td>
-      <td>10hrs</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=November Course Application">Apply</a></td>
-    </tr>
+  <!-- DEC -->
+  <div class="course-row">
+    <div class="course-info">
+      <strong>December</strong> — Annual General Meeting  
+      <br>4th Dec
+    </div>
+    <a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=AGM Participation">Apply</a>
+  </div>
 
-    <tr>
-      <td>December</td>
-      <td>Annual General Meeting</td>
-      <td>4th Dec</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a class="apply-btn" href="mailto:topnotch011@yahoo.com?subject=AGM Participation">Apply</a></td>
-    </tr>
-
-  </table>
 </section>
 
-<!-- ✅ TOGGLE SCRIPT -->
 <script>
 function toggleMenu() {
   const menu = document.getElementById("menu");
@@ -274,4 +248,4 @@ function toggleMenu() {
 </script>
 
 </body>
-  </html>
+</html>
